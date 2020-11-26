@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		384B0C33256F136A00E8A633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B0C32256F136A00E8A633 /* AppDelegate.swift */; };
 		384B0C35256F136A00E8A633 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B0C34256F136A00E8A633 /* SceneDelegate.swift */; };
-		384B0C37256F136A00E8A633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B0C36256F136A00E8A633 /* ViewController.swift */; };
+		384B0C37256F136A00E8A633 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B0C36256F136A00E8A633 /* WeatherViewController.swift */; };
 		384B0C3A256F136A00E8A633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B0C38256F136A00E8A633 /* Main.storyboard */; };
 		384B0C3C256F136B00E8A633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384B0C3B256F136B00E8A633 /* Assets.xcassets */; };
 		384B0C3F256F136B00E8A633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384B0C3D256F136B00E8A633 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		384B0C2F256F136A00E8A633 /* Clear Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clear Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384B0C32256F136A00E8A633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384B0C34256F136A00E8A633 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		384B0C36256F136A00E8A633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		384B0C36256F136A00E8A633 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		384B0C39256F136A00E8A633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384B0C3B256F136B00E8A633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384B0C3E256F136B00E8A633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,37 @@
 			children = (
 				384B0C32256F136A00E8A633 /* AppDelegate.swift */,
 				384B0C34256F136A00E8A633 /* SceneDelegate.swift */,
-				384B0C36256F136A00E8A633 /* ViewController.swift */,
-				384B0C38256F136A00E8A633 /* Main.storyboard */,
+				384B0C472570119E00E8A633 /* Model */,
+				384B0C49257011B300E8A633 /* View */,
+				384B0C48257011A700E8A633 /* Controller */,
 				384B0C3B256F136B00E8A633 /* Assets.xcassets */,
 				384B0C3D256F136B00E8A633 /* LaunchScreen.storyboard */,
 				384B0C40256F136B00E8A633 /* Info.plist */,
 			);
 			path = "Clear Sky";
+			sourceTree = "<group>";
+		};
+		384B0C472570119E00E8A633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384B0C48257011A700E8A633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				384B0C36256F136A00E8A633 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		384B0C49257011B300E8A633 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				384B0C38256F136A00E8A633 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384B0C37256F136A00E8A633 /* ViewController.swift in Sources */,
+				384B0C37256F136A00E8A633 /* WeatherViewController.swift in Sources */,
 				384B0C33256F136A00E8A633 /* AppDelegate.swift in Sources */,
 				384B0C35256F136A00E8A633 /* SceneDelegate.swift in Sources */,
 			);
