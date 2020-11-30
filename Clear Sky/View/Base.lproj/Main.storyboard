@@ -39,7 +39,7 @@
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOZ-GF-b4A">
                                                 <rect key="frame" x="334" y="1" width="40" height="38"/>
@@ -49,6 +49,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="siJ-4W-t94" eventType="touchUpInside" id="kxh-Zi-4cI"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -111,12 +114,13 @@
                     <connections>
                         <outlet property="cityLabel" destination="icE-87-VHo" id="lh3-Ip-Dy7"/>
                         <outlet property="conditionImageView" destination="dCU-EY-EVl" id="qDI-kb-nNp"/>
+                        <outlet property="searchTextField" destination="mJA-Oa-clu" id="z4C-Na-vEA"/>
                         <outlet property="temperatureLabel" destination="Hic-NL-hmH" id="G02-RX-mv4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgj-GN-zNc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="-1354" y="20"/>
         </scene>
     </scenes>
     <resources>
