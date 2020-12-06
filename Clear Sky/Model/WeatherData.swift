@@ -18,5 +18,7 @@ struct Main: Decodable {
 }
 
 struct Weather: Decodable {
-    let description: String
+    let id: Int
+    // TODO: add description of weather
+    // let description: String
 }
